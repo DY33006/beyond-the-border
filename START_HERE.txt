@@ -1,0 +1,1 @@
+Double-click OPEN_ME.html for the working preview. Read README.md for collaboration and deployment. Edit files in dist/; regenerate OPEN_ME.html using scripts/package_source.py. Numerical processing lives in scripts/prepare_data.py.

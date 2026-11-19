@@ -1,0 +1,168 @@
+{
+  "retrieved": "2026-11-18",
+  "recommended_pair": {
+    "countries": [
+      "Finland",
+      "Namibia"
+    ],
+    "year": 2022,
+    "source": "Supplied dwrap_index(1).xlsx; exact original values through tmp/extracted/workbook.json",
+    "overall_gap": 0.0014437487593617626,
+    "field_gaps": {
+      "access": 0.3680369434246074,
+      "services": 0.30507117314706306,
+      "livelihoods": 0.1637573765664115,
+      "movement": 0.5272429793279994,
+      "participation": 0.13891971524854285
+    },
+    "largest_field": "movement",
+    "rules": [
+      "Show 0–1 ICW scores as published, or explicitly label multiplication by 100 as index points. They are not percentages of rights.",
+      "Excerpts illustrate part of the largest field difference. They do not reconstruct inverse-covariance weights or explain a percentage contribution.",
+      "The movement field also includes identity/travel documents. The excerpt comparison concerns settlement/free movement.",
+      "These are recorded 2022 dataset scores, not an assessment of current law or implementation."
+    ]
+  },
+  "codebook": {
+    "source": "DWRAP Technical Guide, September 2024; PDF pp13–14 (printed pp12–13)",
+    "move": {
+      "0": "No provision guaranteeing free movement within the host country",
+      "1": "Guaranteed only for recognized individuals",
+      "2": "Guaranteed for all individuals"
+    },
+    "move_cond": {
+      "0": "No free-movement provision, OR government permission plus at least one other restriction",
+      "1": "Government permission OR one other restriction",
+      "2": "Unconditional free movement"
+    },
+    "camp": {
+      "0": "Designated areas exist and residence is required",
+      "1": "Designated areas exist; living outside allowed with government permission",
+      "2": "No designated residence areas specified"
+    },
+    "warning": "These are the codebook labels, not our independent certification that the laws have no exceptions. Both countries have camp=1. Code 0 is not by itself evidence of a prohibition."
+  },
+  "evidence": [
+    {
+      "id": "finland-section-41",
+      "country": "Finland",
+      "document": "Aliens Act 301/2004",
+      "section": "41; scope context in section 40(3)",
+      "issued": "2004-04-30",
+      "effective": "2004-05-01",
+      "quote": "has the right to move freely in the country and choose his or her place of residence.",
+      "language": "English; Ministry of the Interior translation from Finnish, legally binding only in Finnish and Swedish",
+      "original_language_excerpt": "oikeus liikkua maassa ja valita asuinpaikkansa.",
+      "original_language": "Finnish",
+      "original_source_url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2004/301",
+      "source_url": "https://www.finlex.fi/api/media/statute-foreign-language-translation/688425/mainPdf/main.pdf?timestamp=2004-04-29T21%3A00%3A00.000Z",
+      "pdf_page": 22,
+      "source_version": "Amendments through 1163/2019; translation completed 26 May 2020. Section 41 wording also verified identical in translation through 389/2023, PDF p27. Section 41 is unmarked as amended in both consolidations. This is a historical provision check, not certification of every provision of the 2022 framework.",
+      "crosscheck_url": "https://www.finlex.fi/api/media/statute-foreign-language-translation/688424/mainPdf/main.pdf?timestamp=2004-04-29T21%3A00%3A00.000Z",
+      "context": "The quoted subject is an alien residing legally in Finland. Section 40(3) includes the period while an application is processed until a final decision or an enforceable removal decision.",
+      "recorded_codes": {
+        "move": 2,
+        "move_cond": 2,
+        "camp": 1,
+        "docs": 2,
+        "docs_fee": 3
+      },
+      "connection": "The explicit general free-movement guarantee is consistent with the presence-of-guarantee distinction in move (Finland=2, Namibia=0).",
+      "visible_caveat": "A general right is not the whole law: section 120a also permits individual reception-centre residence/reporting orders for applicants under precautionary-measure conditions.",
+      "caveat_source_section": "117a and 120a (49/2017)",
+      "caveat_pdf_pages": [
+        90,
+        91,
+        92
+      ],
+      "cannot_support": [
+        "Do not claim every asylum seeker can always move without restriction.",
+        "Do not claim this quote independently validates Finland move_cond=2.",
+        "Do not infer camp differences: camp=1 in both countries."
+      ]
+    },
+    {
+      "id": "namibia-section-21",
+      "country": "Namibia",
+      "document": "Namibia Refugees (Recognition and Control) Act 2 of 1999",
+      "section": "21(b); residence-order scope in 20(1)",
+      "assented": "1999-03-04",
+      "published": "1999-03-19",
+      "effective": "2000-09-22",
+      "quote": "without the prior written permission … leaves or attempts to leave such reception area or refugee settlement",
+      "language": "English; original statutory language. Ellipsis removes intervening identification of the responsible officer and the required residence.",
+      "source_url": "https://www.refworld.org/sites/default/files/2024-01/namibia_refugees_recognition_and_control_act_1999.pdf",
+      "pdf_page": 12,
+      "printed_page": 10,
+      "original_gazette_page": 13,
+      "source_version": "Legislation as at 19 March 1999, in Laws.Africa reproduction checked through 19 January 2024. No amendment annotation on sections 20–21. Matches original Gazette text indexed from Namibian ministry copy.",
+      "corroborating_html_url": "https://www.refworld.org/legal/legislation/natlegbod/1999/18298",
+      "original_gazette_url": "https://mha.gov.na/documents/292728/576824/Namibia%2BRefugees%2BRecognition%2Band%2BControl%2BAct%2Bof%2B1999.pdf/09b8e5e2-fbaf-7fd7-e410-2f4130473dbc?download=true&t=1633330727844",
+      "context": "Section 20 permits written residence orders for recognized refugees, protected persons, asylum applicants, and specified family members. Section 21 applies to a person duly served with such an order; leaving or attempting to leave without prior written permission is an offence, punishable on conviction by up to 90 days imprisonment.",
+      "recorded_codes": {
+        "move": 0,
+        "move_cond": 0,
+        "camp": 1,
+        "docs": 1,
+        "docs_fee": 2
+      },
+      "connection": "The statute supplies positive evidence of a permission requirement for people under residence orders. We do not infer a ban merely from Namibia move=0.",
+      "visible_caveat": "This restriction applies to people served with a section 20 residence order; it is not a claim that every refugee is always confined.",
+      "cannot_support": [
+        "Do not equate move=0 with a total statutory ban on movement.",
+        "Do not claim all recognized refugees necessarily receive a residence order.",
+        "Do not claim the excerpt accounts for the full movement-field gap."
+      ]
+    }
+  ],
+  "philippines_2022_audit_case": {
+    "document": "Executive Order 163, series of 2022",
+    "signed": "2022-02-28",
+    "section": "4(b)",
+    "quote": "Improve access of POCs to courts, documentation, health and welfare assistance, primary education, skills training and livelihood programs;",
+    "language": "English; original",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/5/94207",
+    "secondary_mirror_url": "https://lawphil.net/executive/execord/eo2022/eo_163_2022.html",
+    "pdf_url": "https://www.refworld.org/sites/default/files/2024-07/20220228-eo-163-rrd.pdf",
+    "publication": "118 Official Gazette No.10, 2142 (March 7, 2022)",
+    "effectivity": "Section 12: on publication in the Official Gazette or a newspaper of general circulation; do not assert an exact earliest effective date without checking newspaper publication.",
+    "dataset_issue": "Supplied Philippines 2022 policy-title field names only Department Circular 058 (2012), twice concatenated. health=0, services_icw=0.0292850512 in clean export. EO163 is not named. Its preamble also records an inter-agency agreement dated 12 October 2017 for protection services.",
+    "interpretation": "The 2022 EO is evidence that the dataset label and low services score cannot be read as a complete account of available protections in 2022. The order directs institutions to improve access; it does not itself quantify implementation or guarantee identical access to every service. The basis for its absence in DWRAP needs curator clarification.",
+    "do_not": [
+      "Do not state Philippines provided no healthcare in 2022.",
+      "Do not silently replace or recalculate official scores.",
+      "Do not claim the EO necessarily establishes an unconditional individual right to all services.",
+      "Do not attribute the whole Austria–Philippines services gap to omission of this order."
+    ]
+  },
+  "chad_audit_leads_not_for_default": {
+    "url": "https://www.refworld.org/sites/default/files/legacy-pdf/en/2020-12/606334e04.pdf",
+    "document": "Loi No.027/PR/2020 Portant Asile en République du Tchad, 31 December 2020",
+    "items": [
+      {
+        "variable": "unlaw_ent",
+        "recorded_2022": 0,
+        "section": "20",
+        "pdf_page": 7,
+        "observation": "Explicit exemption from penal sanctions for irregular entry/stay, subject to direct arrival, presentation within 90 days, and valid reasons. Codebook 0=no exemption, 1=conditional exemption. Possible coding/scope discrepancy; do not silently recode."
+      },
+      {
+        "variable": "health",
+        "recorded_2022": 0,
+        "section": "21",
+        "pdf_pages": [
+          7,
+          8
+        ],
+        "observation": "The list of rights for refugees/asylum seekers with a provisional document includes the right to health. Possible coding/scope discrepancy."
+      },
+      {
+        "variable": "court",
+        "recorded_2022": 1,
+        "section": "27",
+        "pdf_page": 9,
+        "observation": "Provides court access and same treatment as nationals regarding legal assistance. Whether this meets code2 needs coder clarification."
+      }
+    ]
+  }
+}
